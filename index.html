@@ -24,7 +24,25 @@
 <main>
   <section id="home" class="landing">
     <img src="assets/landing-page.png" alt="ARRIVAL: The Dawn of Kali landing artwork">
+
+    <!-- Clickable WATCH TRAILER hotspot positioned over the artwork -->
+    <button class="trailer-hotspot" id="trailerButton" aria-label="Watch game trailer"></button>
   </section>
+
+  <!-- Trailer video overlay -->
+  <div class="trailer-modal" id="trailerModal" aria-hidden="true">
+    <div class="trailer-backdrop" id="trailerBackdrop"></div>
+    <div class="trailer-window" role="dialog" aria-modal="true" aria-label="ARRIVAL game trailer">
+      <button class="trailer-close" id="trailerClose" aria-label="Close trailer">×</button>
+      <video id="trailerVideo" controls playsinline preload="metadata">
+        <source src="assets/trailer.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+      <div class="trailer-message" id="trailerMessage">
+        Add your game trailer as <strong>assets/trailer.mp4</strong> to play it here.
+      </div>
+    </div>
+  </div>
 
   <section id="about" class="content-section">
     <div class="content-inner">
