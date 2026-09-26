@@ -1,44 +1,15 @@
-# Meru Studios — GitHub Pages Starter
+# ARRIVAL — Website V4
 
-A responsive single-page website inspired by the supplied parchment / dark-red mythology game website reference.
+This version uses the two supplied images directly:
 
-## Files
+- `assets/landing-page.png` — the complete landing/hero artwork supplied by the user.
+- `assets/top-toolbar.png` — the supplied toolbar/border image.
 
-- `index.html` — page structure and content
-- `styles.css` — complete visual design
-- `script.js` — mobile menu + active navigation
-- `assets/` — put your game artwork, logo, trailer thumbnails, etc. here
+The toolbar is an image so its texture, ornamentation, logo and typography remain exactly as supplied. Transparent HTML navigation hotspots are placed over HOME, ABOUT, GAMEPLAY, WORLD, MEDIA and CONTACT so the toolbar remains functional.
 
-## Replace the temporary character
+## GitHub Pages
 
-The hero currently uses a CSS placeholder so the page works immediately.
+Upload the contents of this folder to your GitHub repository, then:
+Settings → Pages → Deploy from branch → main → / (root) → Save.
 
-When you have your final character artwork:
-
-1. Put it in `assets/hero-character.png`.
-2. In `index.html`, replace the `.character-placeholder` block with:
-   `<img class="hero-character" src="assets/hero-character.png" alt="ARRIVAL main character">`
-3. Add:
-   `.hero-character { max-height: 82vh; max-width: 90%; object-fit: contain; }`
-
-## Publish on GitHub Pages
-
-1. Create a new GitHub repository, e.g. `meru-studios-website`.
-2. Upload `index.html`, `styles.css`, `script.js`, and the `assets` folder.
-3. Open **Settings → Pages**.
-4. Under **Build and deployment**, select **Deploy from a branch**.
-5. Choose `main` and `/ (root)`.
-6. Save. GitHub will provide the public Pages URL.
-
-## Recommended next assets
-
-- `assets/logo.png`
-- `assets/hero-character.png`
-- `assets/gameplay-01.jpg`
-- `assets/gameplay-02.jpg`
-- `assets/world-village.jpg`
-- `assets/world-meru.jpg`
-- `assets/world-lanka.jpg`
-- `assets/trailer-poster.jpg`
-
-No framework or build step is required.
+No build process is required.
